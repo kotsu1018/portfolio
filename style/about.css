@@ -1,0 +1,89 @@
+@import url("./reset.css");
+
+.container {
+  margin-bottom: 50px;
+}
+
+.img_container {
+  background-image: url("../img/background.jpeg");
+  height: 420px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img_container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+.link_container {
+  z-index: 9999;
+}
+.link_container a {
+  color: rgb(171, 171, 171);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 15px;
+  transition: 0.3s ease-in-out all;
+}
+.link_container a:hover {
+  color: white;
+}
+.about_container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+.img1_container,
+.img2_container,
+.img3_container {
+  display: flex;
+  width: 30%;
+}
+.material-icons {
+  font-size: 5vw;
+}
+
+.img1_text,
+.img2_text,
+.img3_text {
+  margin-left: 10px;
+}
+.img1_text h2,
+.img2_text h2,
+.img3_text h2,
+.profile_text h2 {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.img1_text p,
+.img2_text p,
+.img3_text p,
+.profile_text p {
+  margin-top: 15px;
+}
+
+.profile {
+  width: 25%;
+}
+.profile img {
+  width: 100%;
+  height: auto;
+}
+.profile_container {
+  display: flex;
+  justify-content: center;
+}
+.profile_text {
+  width: 30%;
+  margin-left: 30px;
+}
